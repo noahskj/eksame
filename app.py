@@ -40,9 +40,13 @@ while running:
     if keys[pg.K_DOWN]:
         player_y += move_speed
 
+    # Update the screen position based on player's movement
+    screen_x = -(player_x - win_width/2)
+    screen_y = -(player_y - win_height/2)
+
     # Redraw the screen
     win.fill((255, 255, 255))
-    win.blit(player_img, (player_x, player_y))
+    win.blit(player_img, (player_x + screen_x, player_y + screen_y))
     pg.display.update()
 
 # Quit Pygame
