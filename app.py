@@ -8,8 +8,8 @@ win_width = 768
 win_height = 504
 
 # Define the camera size
-camera_width = 384
-camera_height = 252
+camera_width = 400
+camera_height = 300
 
 # Create the Pygame window
 win = pg.display.set_mode((win_width, win_height))
