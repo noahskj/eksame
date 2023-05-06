@@ -109,13 +109,6 @@ while running:
     elif camera_y > bg.get_height() - camera_height:
         camera_y = bg.get_height() - camera_height
 
-    # Check for collision between player and enemy
-    player_rect = player_img.get_rect(topleft=(player_x, player_y))
-    enemy_rect = enemy_img.get_rect(topleft=(enemy_x, enemy_y))
-    if player_rect.colliderect(enemy_rect):
-        print("Game over!")
-        
-
 # Update the background position based on the camera position
     bg_x = -camera_x
     bg_y = -camera_y
